@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change attribute in js ==>> means adding new attribute in element</title>
+</head>
+<body>
+    <button id="btn">Send</button>
+    
+    <script>
+       //1--->>> 
+
+        let btn=document.getElementById('btn');
+        btn.setAttribute("name","form1");
+      
+        // 2--->>>
+
+        // let btn=document.getElementById("btn");
+        let val=btn.getAttribute("name");
+        console.log(val);
+
+        // 3--->>> by using "removeAttribute" hm remove kr skte kisi bhi attribute ko.
+
+        let val1=btn.removeAttribute("name");
+
+        // 4--->>>  by using "hasAttribute" hm pta lga skte ye attribute present hai ya nhi.
+
+        let val2=btn.removeAttribute("id");
+        console.log(val);
+    
+    </script>
+</body>
+</html>
